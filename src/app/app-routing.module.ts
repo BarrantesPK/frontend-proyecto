@@ -7,7 +7,8 @@ import { LayoutComponent as CajaComponent } from './cajas/layout/layout.componen
 import { LayoutComponent as AhorroComponent } from './ahorros/layout/layout.component';
 import { SasNavbarComponent } from './sas/components/sas-navbar/sas-navbar.component'
 import { LoginGuard } from './login/shared/guard/login.guard';
-// import { NavBarComponent } from './prestamos/component/nav-bar/nav-bar.component';
+import { NavBarComponent } from './prestamos/component/nav-bar/nav-bar.component';
+
 
 const routes: Routes = [
   { path:'', pathMatch:'full', redirectTo: '/login' },
@@ -16,7 +17,9 @@ const routes: Routes = [
   { path: 'cajas', component: CajaComponent },
   { path: 'ahorros', component: AhorroComponent },
   { path: 'asociados', component: SasNavbarComponent },
-  // { path: 'prestamos', component: NavBarComponent }
+   { path: 'prestamos', component: NavBarComponent },
+
+
 ];
 
 @NgModule({

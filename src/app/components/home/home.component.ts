@@ -26,9 +26,9 @@ export class HomeComponent implements OnInit {
     this.router.navigate(['/cajas'])
   }
 
-  // goPrestamos(){
-  //   this.router.navigate(['/prestamos'])
-  // }
+  goPrestamos(){
+    this.router.navigate(['/prestamos'])
+   }
 
   logout(){
     this.authService.logOut()
